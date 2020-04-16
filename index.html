@@ -8,6 +8,59 @@
 </head>
 
 <body>
+  <h1>Ajax Lab 1</h1>
+  <div id="output"></div>
+  <br>
+  <ul>
+    <li>
+      <button id="all-posts">Get all posts</button>
+    </li>
+    <li>
+      <button id="post-10">Get post with an id of 10</button>
+    </li>
+    <li>
+      <button id="comment-12">Get the comments from post with id of 12 </button>
+    </li>
+    <li>
+      <button id="user-2">Get all the posts from user with id of 2</button>
+    </li>
+    <li>
+      <form id="form">
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title">
+        <br>
+        <label for="body">Body: </label>
+        <input type="text" name="body" id="body">
+        <br>
+        <button type="submit">Create a new post and log the id generated for it by the server</button>
+      </form>
+    </li>
+    <li>
+      <form id="form2">
+        <label for="title2">Title: </label>
+        <input type="text" name="title2" id="title2">
+        <br>
+        <label for="body2">Body: </label>
+        <input type="text" name="body2" id="body2">
+        <br>
+        <button type="submit">Replace the post with id of 12 and render the responseJSON</button>
+      </form>
+    </li>
+    <li>
+      <button id="update-post">Update the title of post with id of 12 and render responseJSON</button>
+    </li>
+    <li>
+      <button id="delete-post">Delete the post with id of 12 and render a success message</button>
+    </li>
+    <li>
+      <button id="list-posts">Display a list of posts.</button>
+      <ul>
+        <li>When the user clicks on a post, display all the comments from that post</li>
+        <li>Display a link back to all posts</li>
+      </ul>
+    </li>
+  </ul>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="main.js"></script>
